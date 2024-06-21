@@ -1,8 +1,37 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/LunBo/LunBo"
   ],
+  "tabBar": {
+    "color": "#666666", 
+    "selectedColor": "#b4282d",
+    "backgroundColor": "#ffffff", 
+    "borderStyle": "black", 
+    "list": [
+        {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "",
+            "selectedIconPath": ""
+        },
+        {
+            "pagePath": "pages/LunBo/LunBo",
+            "text": "轮播",
+            "iconPath": "",
+            "selectedIconPath": ""
+        },
+        {
+            "pagePath": "pages/logs/logs",
+            "text": "日志",
+            "iconPath": "",
+            "selectedIconPath": ""
+        }
+    ]
+},
+
+
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Weixin",

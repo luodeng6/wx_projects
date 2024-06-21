@@ -1,0 +1,23 @@
+<!--pages/LunBo/LunBo.wxml-->
+<view class="top_box">
+  <text class="title_index">下面是轮播图的实现swiper:</text>
+</view>
+
+
+<view>
+  <swiper class="Lunbo_Box"
+  indicator-dots="true"
+    indicator-color="rgba(255, 255, 255, .5)"
+    indicator-active-color="#ff0000"
+    autoplay="true"
+    interval="3000"
+    duration="500"
+    circular="true"
+    display-multiple-items="1"
+  >
+    <swiper-item wx:for="{{imglist}}" wx:key="{{index}}" style="width: 100%; height: 500px;">
+      <image src="{{item}}"></image>
+      <text class="index_text">{{index}}</text>
+    </swiper-item>
+  </swiper>
+</view>
