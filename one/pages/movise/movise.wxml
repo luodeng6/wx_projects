@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="movie-header">
+    <image class="movie-cover" src="{{mov_pic}}" mode="aspectFit"></image>
+    <view class="movie-info">
+      <view>
+        <text class="movie-title">{{mov_title}}</text>
+      </view>
+
+      <view>
+        <text class="movie-year">{{mov_year}}</text>
+      </view>
+
+      <view>
+        <text class="movie-area">{{mov_area}}</text>
+      </view>
+
+      <view>
+        <text class="movie-director">导演: {{mov_director}}</text>
+      </view>
+      
+      <view>
+        <text class="movie-rating">评分: {{mov_rating}}</text>
+      </view>
+    
+
+    </view>
+  </view>
+  <view class="movie-type">
+    <text>类型: {{mov_type}}</text>
+  </view>
+  <view class="movie-intro">
+    <text>{{mov_intro}}</text>
+  </view>
+  <view class="movie-link">
+    <navigator url="{{mov_link}}">豆瓣链接</navigator>
+  </view>
+</view>

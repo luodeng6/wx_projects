@@ -8,3 +8,13 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+/* app.wxss 或其他样式文件 */
+.tabbar-text {
+  font-size: 20px; /* 设置字体大小 */
+}
+
+/* 可以通过类选择器覆盖 */
+.tabbar-item .weui-tabbar__label {
+  font-size: 30px !important;
+}

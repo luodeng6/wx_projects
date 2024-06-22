@@ -1,0 +1,31 @@
+/* pages/event/event.wxss */
+.vediobox {
+  width: 100%;
+  padding: 0;
+  
+}
+video{
+  width: 100%;
+}
+
+
+
+
+.styled-input {
+  width: 80%;
+  height: 40px;
+  margin: 10px 15px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.styled-input:focus {
+  border-color: #3cc51f;
+  outline: none;
+  box-shadow: 0 0 8px rgba(60, 197, 31, 0.6);
+}
+

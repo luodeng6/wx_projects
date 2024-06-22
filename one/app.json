@@ -1,8 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/LunBo/LunBo"
+    "pages/LunBo/LunBo",
+    "pages/event/event",
+    "pages/ocr/ocr",
+    "pages/movise/movise"
   ],
   "tabBar": {
     "color": "#666666", 
@@ -12,21 +14,20 @@
     "list": [
         {
             "pagePath": "pages/index/index",
-            "text": "首页",
-            "iconPath": "",
-            "selectedIconPath": ""
+            "text": "首页"
         },
         {
             "pagePath": "pages/LunBo/LunBo",
-            "text": "轮播",
-            "iconPath": "",
-            "selectedIconPath": ""
-        },
+            "text": "轮播"
+        }, 
+          {
+          "pagePath": "pages/event/event",
+          "text": "事件"
+
+      },
         {
-            "pagePath": "pages/logs/logs",
-            "text": "日志",
-            "iconPath": "",
-            "selectedIconPath": ""
+            "pagePath": "pages/ocr/ocr",
+            "text": "ocr"
         }
     ]
 },

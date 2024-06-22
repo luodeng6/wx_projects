@@ -5,6 +5,7 @@ Page({
   data: {
     logs: []
   },
+
   onLoad() {}
     
 })

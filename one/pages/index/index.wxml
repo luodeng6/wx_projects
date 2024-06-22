@@ -1,13 +1,17 @@
-<!--index.wxml-->
-<view class="top" style="display: flex; width: 100%;height: 100%;">
-  <view style="width: 50%;">
-      <view style="width: 100%;" wx:for="{{imageList}}" wx:key="index">
-        <image wx:if="{{true}}" style="width: 100%;" src="{{item}}" mode="" />
-        <text>{{isTrue(index)}}</text>
-      </view>
+<view style="padding: 20px ;">
+  <text style="font-size: 30px; color: green;">姓名：{{name}}</text>
+
+</view>
+
+<view style="width: 100% ;margin: 0 auto;">
+  <!-- wx:key 用于提高渲染效率 -->
+  <view style="padding-bottom: 40px ;" wx:for="{{imglist}}" wx:key="index">
+    <image style="width: 100%;" src="{{item.url}}" mode="widthFix" data-info="{{index}}" bind:tap="getImg"></image>
+    <text bind:tap="getTitle" data-url="{{item.url}}" data-index="{{index}}" style="font-size: 20px; color: green;position: relative; left: 20px; top: 20px;">第 {{index+1}}张: {{item.title}}</text>
+    <view style="padding:20px 0px 0px 20px;margin-top: 10px;">
+      <text wx:if="{{isshow_list[index]}}" style="color: blue;">链接: {{item.url}}</text>
+    </view>
+
   </view>
 
-  <view style="background-color: black; width: 50%;">
-
-  </view>
 </view>

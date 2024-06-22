@@ -5,19 +5,51 @@
 
 
 <view>
-  <swiper class="Lunbo_Box"
-  indicator-dots="true"
-    indicator-color="rgba(255, 255, 255, .5)"
-    indicator-active-color="#ff0000"
-    autoplay="true"
-    interval="3000"
-    duration="500"
-    circular="true"
-    display-multiple-items="1"
-  >
-    <swiper-item wx:for="{{imglist}}" wx:key="{{index}}" style="width: 100%; height: 500px;">
+  <swiper class="Lunbo_Box" indicator-dots="true" indicator-color="rgba(255, 255, 255, .5)" indicator-active-color="#ff0000" autoplay="true" interval="3000" duration="500" circular="true" display-multiple-items="1">
+    <swiper-item wx:for="{{imglist}}" wx:key="{{index}}">
       <image src="{{item}}"></image>
       <text class="index_text">{{index}}</text>
     </swiper-item>
   </swiper>
 </view>
+
+<view class="view-contain-ti">
+  <text class="text-ti">qq账号</text>
+  <input class="input1" value="{{QQ_text}}" bind:input="changeQQ" /> <button type="primary" size="mini" bind:tap="getInformatioin">获取信息</button>
+</view>
+
+
+<view class="information"  style="padding: 20rpx;">
+  <view>
+    <text>账号信息如下:</text>
+  </view>
+  <view>
+    <view>
+      <text selectable>QQ昵称 :{{QQ_name}}</text>
+    </view>
+    <view>
+      <text selectable>性别 :{{QQ_sex===female?"女":"男"}}</text>
+    </view>
+    <view>
+      <text selectable>年龄 :{{QQ_age}}</text>
+    </view>
+    <view> 
+      <text>地区 : {{QQ_area===""?"获取失败":QQ_area}}</text>
+    </view>
+
+  </view>
+</view>
+
+<!-- 
+  {
+  "code": 200,
+  "result": {
+    "user_id": 3066992141,
+    "nickname": "断网中...",
+    "sex": "unknown",
+    "age": 0,
+    "area": "美国 加利福尼亚 洛杉矶"
+  },
+  "msg": "success"
+}
+ -->

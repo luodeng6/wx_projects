@@ -4,7 +4,7 @@
 }
 
 .Lunbo_Box {
-  height: 454px;
+  height: 354px;
 }
 
 .top_box {
@@ -18,4 +18,37 @@
   color: gold;
   letter-spacing: 0;
   text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135 
+}
+
+
+
+
+
+/* 文本框样式 */
+.view-contain-ti {
+  display: flex;
+
+  margin: 20px;
+
+}
+
+.text-ti {
+  position: absolute;
+  font-size: 12px;
+  background: white;
+  margin: -10px 0 0 10px;
+  padding: 0 5px;
+  color: rgb(144, 147, 167);
+}
+
+.input1 {
+  height: 40px;
+  border: 3rpx solid #faca82;
+  border-radius: 10rpx;
+  margin:  auto 10px;
+}
+
+
+.information view{
+  padding: 10px;
 }

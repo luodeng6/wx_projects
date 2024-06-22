@@ -1,0 +1,37 @@
+.container {
+  padding: 20px;
+}
+
+.movie-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.movie-cover {
+  width: 100px;
+  height: 150px;
+}
+
+.movie-info {
+  margin-left: 20px;
+}
+
+.movie-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.movie-year, .movie-area, .movie-director, .movie-rating {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.movie-type, .movie-intro, .movie-link {
+  margin-bottom: 20px;
+}
+
+.movie-link navigator {
+  color: #1cbbb4;
+}

@@ -1,0 +1,13 @@
+<view class="container">
+  <button bindtap="chooseImage">选择图片</button>
+  <view wx:if="{{imagePath}}">
+    <image src="{{imagePath}}" mode="aspectFit" style="width: 300px; height: 300px;"/>
+  </view>
+  <button bindtap="uploadImage" wx:if="{{imagePath}}">上传图片</button>
+</view>
+
+
+<view style="padding: 20rpx;">
+  <button type="primary" bind:tap="goToMovise">电影页面-></button>
+
+</view>
