@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/student/student"
+  ], "tabBar": {
+    "color": "#666666", 
+    "selectedColor": "#b4282d",
+    "backgroundColor": "#ffffff", 
+    "borderStyle": "black", 
+    "list": [
+        {
+            "pagePath": "pages/index/index",
+            "text": "首页"
+        },
+        {
+          "pagePath": "pages/student/student",
+          "text": "学生管理"
+      }
+    ]
+},
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

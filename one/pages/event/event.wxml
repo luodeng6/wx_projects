@@ -15,14 +15,32 @@
 <view style="margin:20px;">
   <view style="padding: 20px;"><text style="font-size: 20px;color: green;line-height: 20px;">input事件类型：</text></view>
 
-  <view>
-    <input type="text" placeholder="请输入用户名:" bind:input="usernameChange" class="styled-input" value="{{username_text}}" />
-    <text selectable>你输入的是：{{username_text!=""?username_text:"空"}}</text>
+
+  <view style="display: flex;align-items: center;">
+    <input type="text" placeholder="请输入用户11:" bind:input="usernameChange" class="styled-input" value="{{username_text}}" />
+    <button type="primary" size="mini" style="height: 100%;font-size: small;" bind:tap="cs">测试后端接口</button>
   </view>
 
+ <!-- 表格区域 -->
+  <view class="su-table-box" hidden="{{ishide_th}}">
+    <view class="su-table">
+      <!-- 表格标题 -->
+      <view class="su-tr">
+        <view class="su-th" wx:for="{{th}}" wx:key="index">{{item}}</view>
+      </view>
+      <!-- 表格内容 -->
+      <view class="su-tr" wx:for="{{td}}" wx:for-item="tdinfo" wx:key="index">
+        <view class="su-td" wx:for="{{tdinfo}}" wx:key="index_">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <text selectable>你输入的是：{{username_text!=""?username_text:"空"}}</text>
   <view style="margin-top: 30px;">
     <view>
-      <text>选择您的年龄:  {{YouAge}}</text>
+      <text>选择您的年龄: {{YouAge}}</text>
       <text wx:if="{{isShowWarn}}" style="color: red; margin: 30px;">年龄不能小于0!!</text>
     </view>
     <view style="margin-top:20px;">

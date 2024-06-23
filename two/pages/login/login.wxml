@@ -1,0 +1,23 @@
+<view class="container">
+
+  <view style="position: relative;bottom: 266rpx;">
+    <view>
+      <image class="logo" src="/images/logo.png"></image>
+    </view>
+
+    <view>
+        <view class="input-group">
+          <image class="icon" src="/images/user-icon.png"></image>
+          <input class="input" type="text" value="{{username}}" bind:input="usernameChange" name="username" placeholder="用户名" />
+        </view>
+        <view class="input-group">
+          <image class="icon" src="/images/password-icon.png"></image>
+          <input class="input" value="{{password}}" bind:input="passwordChange" type="password" name="password" placeholder="密码" />
+        </view>
+        <button class="button" bind:tap="login">登录</button>
+    </view>
+
+  </view>
+
+
+</view>
